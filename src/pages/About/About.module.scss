@@ -1,0 +1,50 @@
+.root {
+  background: linear-gradient(45deg, #30cfd0, #330867);
+}
+
+.wrapper {
+  width: 80vw;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+.blockAbout {
+  display: flex;
+
+  img {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    height: 65vh;
+  }
+}
+
+.cardAbout {
+  max-height: 80vh;
+  min-width: 20vw;
+}
+
+.descriptionAbout {
+  width: 60%;
+  color: white;
+  font-size: 25px;
+  margin-left: 20px;
+}
+
+@media (max-width: 480px) {
+  .wrapper {
+    margin-top: 30px;
+    width: 90vw;
+    padding: 0;
+  }
+
+  .blockAbout {
+    flex-direction: column;
+  }
+
+  .descriptionAbout {
+    width: 100%;
+    font-size: 18px;
+    margin: 15px 0;
+  }
+}

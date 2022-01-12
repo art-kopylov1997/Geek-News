@@ -1,0 +1,47 @@
+.wrapper {
+  background-color: #212529;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+}
+
+.container {
+  width: 100%;
+  text-align: center;
+  padding: 15px;
+  align-items: center;
+
+  a {
+    &:hover {
+      color: lighten(#ea1d24, 5%);
+    }
+  }
+}
+
+.icons {
+  fill: #ffffff;
+  height: 40px;
+  width: 40px;
+
+  &:hover {
+    fill: #0d6efd;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 120vw;
+    font-size: 12px;
+    padding: 0;
+  }
+
+  .icons {
+    height: 25px;
+    width: 25px;
+  }
+
+  .blockInfoLinks {
+    display: flex;
+  }
+}

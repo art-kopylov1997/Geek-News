@@ -1,0 +1,46 @@
+.parallax {
+  background-image: url("../../assets/img/parallaxBg.jpg");
+  height: 600px;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
+  align-items: center;
+  position: relative;
+
+  div {
+    z-index: 3;
+
+    h1 {
+      font-size: 34px;
+    }
+
+    p {
+      font-size: 26px;
+    }
+  }
+
+  .mask {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .6);
+    z-index: 2;
+  }
+}
+
+@media (max-width: 480px) {
+  .parallax {
+    background-image: url("../../assets/img/parallaxBg-media.jpg");
+
+    div {
+      h1 {
+        font-size: 26px;
+      }
+
+      p {
+        font-size: 18px;
+      }
+    }
+  }
+}

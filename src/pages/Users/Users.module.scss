@@ -1,0 +1,16 @@
+.imageContainer {
+  background-image: url("../../assets/img/users-background.jpg");
+  background-size: cover;
+  height: 100vh;
+}
+
+.wrapperTable {
+  background: linear-gradient(45deg, #fff1eb, #ace0f9);
+}
+
+@media (max-width: 480px) {
+  .imageContainer {
+    height: 30vh;
+  }
+
+}
