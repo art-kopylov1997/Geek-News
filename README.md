@@ -7,4 +7,5 @@ React Router
 Bootstrap
 module CSS
 SASS
+Prettier
 А так же desktop верстка + мобильная
