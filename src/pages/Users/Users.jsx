@@ -95,35 +95,34 @@ const USERS = [
     },
 ]
 
-const Users = () => {
-    return (
-        <>
-            <div className={styles.imageContainer} />
+const Users = () => (
+    <>
+        <div className={styles.imageContainer}/>
 
-            <Table striped bordered hover className={styles.wrapperTable}>
-                <thead>
-                <tr>
-                    <th>#</th>
-                    <th>Name</th>
-                    <th>Username</th>
-                    <th>Points</th>
-                </tr>
-                </thead>
-                <tbody>
-                {
-                    USERS.map(user => (
-                        <tr key={user.points}>
-                            <td>{user.stance}</td>
-                            <td>{user.name}</td>
-                            <td>{user.username}</td>
-                            <td>{user.points}</td>
-                        </tr>
-                    ))
-                }
-                </tbody>
-            </Table>
-        </>
-    )
-}
+        <Table striped bordered hover className={styles.wrapperTable}>
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Username</th>
+                <th>Points</th>
+            </tr>
+            </thead>
+
+            <tbody>
+            {
+                USERS.map(user => (
+                    <tr key={user.points}>
+                        <td>{user.stance}</td>
+                        <td>{user.name}</td>
+                        <td>{user.username}</td>
+                        <td>{user.points}</td>
+                    </tr>
+                ))
+            }
+            </tbody>
+        </Table>
+    </>
+)
 
 export default Users;

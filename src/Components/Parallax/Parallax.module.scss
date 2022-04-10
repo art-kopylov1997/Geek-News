@@ -1,5 +1,5 @@
-.parallax {
-  background-image: url("../../assets/img/parallaxBg.jpg");
+.root {
+  background-image: url("../../assets/img/parallax/parallax-background.jpg");
   height: 600px;
   background-attachment: fixed;
   display: flex;
@@ -9,38 +9,25 @@
   position: relative;
 
   div {
-    z-index: 3;
-
-    h1 {
-      font-size: 34px;
-    }
-
-    p {
-      font-size: 26px;
-    }
+    z-index: 2;
+    font-size: 28px;
   }
 
-  .mask {
+  .background {
     position: absolute;
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, .6);
-    z-index: 2;
+    z-index: 1;
   }
 }
 
 @media (max-width: 480px) {
-  .parallax {
-    background-image: url("../../assets/img/parallaxBg-media.jpg");
+  .root {
+    background-image: url("../../assets/img/parallax/parallax-bg-media.jpg");
 
     div {
-      h1 {
         font-size: 26px;
-      }
-
-      p {
-        font-size: 18px;
-      }
     }
   }
 }

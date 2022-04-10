@@ -1,13 +1,11 @@
-.root {
-  img {
-    display: block;
-    object-fit: cover;
-    height: 80vh;
-    width: 100%;
-  }
+.image {
+  display: block;
+  object-fit: cover;
+  height: 80vh;
+  width: 100%;
 }
 
-.carouselCaption {
+.caption {
   margin: 0 auto;
   width: 55vw;
   border-radius: 20px;
@@ -18,7 +16,7 @@
 }
 
 @media (max-width: 480px) {
-  .carouselCaption {
+  .caption {
     width: 80vw;
 
     h2 {

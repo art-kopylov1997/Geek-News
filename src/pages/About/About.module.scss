@@ -2,17 +2,13 @@
   background: linear-gradient(45deg, #30cfd0, #330867);
 }
 
-.wrapper {
+.cardWrapper {
+  display: flex;
   width: 80vw;
   margin: 0 auto;
   padding: 40px;
-}
-
-.blockAbout {
-  display: flex;
 
   img {
-    display: block;
     object-fit: cover;
     width: 100%;
     height: 65vh;
@@ -21,10 +17,10 @@
 
 .cardAbout {
   max-height: 80vh;
-  min-width: 20vw;
+  min-width: 30vw;
 }
 
-.descriptionAbout {
+.description {
   width: 60%;
   color: white;
   font-size: 25px;
@@ -32,17 +28,18 @@
 }
 
 @media (max-width: 480px) {
-  .wrapper {
-    margin-top: 30px;
-    width: 90vw;
-    padding: 0;
-  }
-
-  .blockAbout {
+  .cardWrapper {
     flex-direction: column;
+    width: 70vw;
+    margin-top: 25px;
+    padding: 0;
+
+    img {
+      height: 35vh;
+    }
   }
 
-  .descriptionAbout {
+  .description {
     width: 100%;
     font-size: 18px;
     margin: 15px 0;
